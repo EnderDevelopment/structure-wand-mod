@@ -1,0 +1,32 @@
+plugins {
+    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        name = 'Fabric'
+        url = 'https://maven.fabricmc.net/'
+    }
+}
+
+extensions {
+    loom {
+        minecraftVersion = '1.21.4'
+        runs {
+            client {
+                mainClass = 'com.example.structurewandmod.StructureWandMod'
+            }
+            server {
+                mainClass = 'com.example.structurewandmod.StructureWandMod'
+            }
+        }
+    }
+}
+
+dependencies {
+    minecraft 'com.mojang:minecraft:1.21.4'
+    mappings 'net.fabricmc:yarn:1.21.4+build.1:v2'
+    modImplementation 'net.fabricmc.fabric-api:fabric-api:0.96.0+1.21.4'
+}

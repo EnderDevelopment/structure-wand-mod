@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "id": "structurewandmod",
+    "version": "1.0.0",
+    "name": "Structure Wand Mod",
+    "description": "A Fabric mod for Minecraft 1.21.4 featuring Structure Wand item with GUI for house style selection, real-time preview with terrain adaptation, and instant placement.",
+    "authors": [
+        "Your Name"
+    ],
+    "license": "MIT",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.example.structurewandmod.StructureWandMod"
+        ]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=0.14.0",
+        "fabric-api": "*",
+        "minecraft": "1.21.4"
+    }
+}
